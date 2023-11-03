@@ -3,8 +3,7 @@ set terminal png size 800,600
 set output "histogram__total_bags.png"
 set title "Histogram of Total Bags Shipped(Avocado)"
 set xlabel "Total Bags(x10,000,000)"
-set ylabel "Freq"
-
+set ylabel "Freq" rotate by 90
 # Set bin width and range
 bin_width = 4000000
 bin_number(x) = floor(x/bin_width)
