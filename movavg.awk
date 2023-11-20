@@ -25,6 +25,10 @@ NR > 1 {
         ma300 = total300 / 300;
         if (NR > 400) {
             ma400 = total400 / 400;
-            print dates[NR-1] ",
-
+            print dates[NR-1] ", " ma300 ", " ma400;
+        } else {
+            print dates[NR-1] ", " ma300 ", NA";
+        }
+    }
+}
 
